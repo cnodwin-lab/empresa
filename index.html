@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diario Chat</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+</head>
+<body>
+  <h1>Diario estilo chat</h1>
+
+  <form id="formEntrada">
+    <label for="autor">Autor:</label>
+    <select id="autor">
+      <option value="Nodwin">Nodwin</option>
+      <option value="Genesis">Genesis</option>
+    </select>
+
+    <label for="contenido">Mensaje:</label>
+    <textarea id="contenido" placeholder="Escribe algo..." required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div id="entradas" class="entradas"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
